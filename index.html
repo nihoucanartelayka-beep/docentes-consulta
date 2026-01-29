@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Consulta de Docentes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{font-family:'Segoe UI',Tahoma;background:#eef2f5;margin:0}
+header{background:#1e3d59;color:white;padding:25px;text-align:center}
+nav{background:#16324f;padding:12px;text-align:center}
+nav a{color:white;margin:0 18px;text-decoration:none;font-weight:bold;cursor:pointer}
+section{display:none;padding:25px;animation:fade .4s}
+section.active{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+table{width:100%;border-collapse:collapse;background:white;box-shadow:0 4px 15px rgba(0,0,0,0.15)}
+th,td{border:1px solid #ccc;padding:10px;text-align:center}
+th{background:#1e3d59;color:white}
+.disponible{background:#72f2d4;color:#000000;font-weight:bold}
+.ocupado{background:#abffdf;color:#000000}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+footer{background:#1e3d59;color:white;text-align:center;padding:15px;margin-top:30px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Unidad Educativa Provincia del Carchi</h1>
+<p>Sistema de Consulta Académica</p>
+</header>
+
+<nav>
+<a onclick="mostrar('inicio')">Inicio</a>
+<a onclick="mostrar('docentes')">Docentes</a>
+<a onclick="mostrar('horarios')">Horarios</a>
+<a onclick="mostrar('contacto')">Contacto</a>
+</nav>
+
+<section id="inicio" class="active">
+      <div style="display:flex; justify-content:center; margin-top:20px;">
+  <img src="img/colegio.jpg" 
+       alt="Unidad Educativa Provincia del Carchi"
+       style="
+         width:100%;
+         max-width:800px;
+         border-radius:16px;
+         box-shadow:0 6px 20px rgba(0,0,0,0.25);
+       ">
+</div>
+<h2>📌 Bienvenidos</h2>
+
+<p>
+La Unidad Educativa Provincia del Carchi les da la bienvenida a su plataforma
+digital de consulta académica, creada para facilitar el acceso a la información
+del personal docente y los horarios de atención.
+</p>
+
+<p>
+Este sistema permite a estudiantes y padres de familia conocer de manera
+rápida y ordenada las asignaturas, cursos y disponibilidad de los docentes,
+fortaleciendo la comunicación dentro de la comunidad educativa.
+</p>
+
+<p>
+Agradecemos su visita y los invitamos a explorar las diferentes secciones
+para obtener información clara sobre nuestra institución.
+</p>
+</section>
+
+<section id="docentes">
+<h2>👩‍🏫 Docentes</h2>
+
+<table>
+<tr>
+<th>Foto</th>
+<th>Nombre</th>
+<th>Asignatura</th>
+<th>Cursos</th>
+</tr>
+
+<tr>
+<td><img src="img/Ana.jpg" width="70" style="border-radius:50%"></td>
+<td>Ana García</td>
+<td>Matemáticas</td>
+<td>1ro – 3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/luis.jpg" width="70" style="border-radius:50%"></td>
+<td>Luis López</td>
+<td>Diseño Web</td>
+<td>1ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Sofia.jpg" width="70" style="border-radius:50%"></td>
+<td>Sofía Morales</td>
+<td>Inglés</td>
+<td>2do Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/pedro.jpg" width="70" style="border-radius:50%"></td>
+<td>Pedro Castillo</td>
+<td>Educación Física</td>
+<td>1ro – 3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Valeria.jpg" width="70" style="border-radius:50%"></td>
+<td>Valeria Cruz</td>
+<td>Lengua y Literatura</td>
+<td>3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Maria.jpg" width="70" style="border-radius:50%"></td>
+<td>María Torres</td>
+<td>Biología</td>
+<td>1ro – 2do Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/feder.jpg" width="70" style="border-radius:50%"></td>
+<td>Feder Gómez</td>
+<td>Química</td>
+<td>2do Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Carlos.jpg" width="70" style="border-radius:50%"></td>
+<td>Carlos Pérez</td>
+<td>Física</td>
+<td>2do Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Juan.jpg" width="70" style="border-radius:50%"></td>
+<td>Juan Rivera</td>
+<td>Historia</td>
+<td>2do Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/galo.jpg" width="70" style="border-radius:50%"></td>
+<td>Galo Pérez</td>
+<td>Emprendimiento</td>
+<td>3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/lucia.jpg" width="70" style="border-radius:50%"></td>
+<td>Lucía Ríos</td>
+<td>Filosofía</td>
+<td>3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/luna.jpg" width="70" style="border-radius:50%"></td>
+<td>Luna Vega</td>
+<td>Sistema Operativo</td>
+<td>3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Daniel.jpg" width="70" style="border-radius:50%"></td>
+<td>Daniel Ortiz</td>
+<td>Programación</td>
+<td>1ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Victoria.jpg" width="70" style="border-radius:50%"></td>
+<td>Victoria Cruz</td>
+<td>Aplicaciones Ofimáticas</td>
+<td>3ro Bachillerato</td>
+</tr>
+
+<tr>
+<td><img src="img/Adrian.jpg" width="70" style="border-radius:50%"></td>
+<td>Adrian Villamar</td>
+<td>Soporte Técnico</td>
+<td>2do Bachillerato</td>
+</tr>
+
+</table>
+
+</section>
+<section id="horarios">
+
+  <div style="
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+  ">
+
+    <h1 style="margin:0; text-align:center;">
+      🕒 Horario Semanal de Atención
+    </h1>
+
+    <div style="display:flex; gap:25px; align-items:center;">
+
+      <div style="display:flex; align-items:center; gap:6px;">
+        <span style="
+          width:16px;
+          height:16px;
+          background:#55eecb;
+          display:inline-block;
+          border:1px solid #333;
+        "></span>
+        <strong>Disponible</strong>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:6px;">
+        <span style="
+          width:16px;
+          height:16px;
+          background:#9bffde;
+          display:inline-block;
+          border:1px solid #333;
+        "></span>
+        <strong>Clases</strong>
+      </div>
+
+    </div>
+
+  </div>
+<table>
+<tr>
+<th>Hora</th>
+<th>Lunes</th>
+<th>Martes</th>
+<th>Miércoles</th>
+<th>Jueves</th>
+<th>Viernes</th>
+</tr>
+
+<tr>
+<td>08:00 - 09:00</td>
+<td class="disponible">Ana García<br><small>(Matemáticas)</small>
+<td class="ocupado">Luis López<br><small>(Diseño Web)</small>
+<td class="disponible">Carlos Pérez<br><small>(Física)</small>
+<td class="ocupado">María Torres<br><small>(Biología)</small>
+<td class="disponible">Pedro Castillo<br><small>(Educ. Física)</small>
+</tr>
+
+<tr>
+<td>09:00 - 10:00</td>
+<td class="ocupado">Ana García<br><small>(Matemáticas)</small>
+<td class="disponible">Feder Gómez<br><small>(Química)</small>
+<td class="ocupado">Juan Rivera<br><small>(Historia)</small>
+<td class="disponible">Luna Vega<br><small>(Sistema Operativo)</small>
+<td class="ocupado">Adrian Villamar<br><small>(Soporte Técnico)</small>
+</tr>
+
+<tr>
+<td>10:00 - 11:00</td>
+<td class="disponible">María Torres<br><small>(Biología)</small>
+<td class="ocupado">Lucía Ríos<br><small>(Filosofía)</small>
+<td class="disponible">Galo Pérez<br><small>(Emprendimiento)</small>
+<td class="ocupado">Victoria Cruz<br><small>(Aplicaciones Ofimáticas)</small>
+<td class="disponible">Daniel Ortiz<br><small>(Programación)</small>
+</tr>
+
+<tr>
+<td>11:00 - 12:00</td>
+<td class="ocupado">Sofía Morales<br><small>(Inglés)</small>
+<td class="disponible">Valeria Cruz<br><small>(Lengua)</small>
+<td class="ocupado">Ana García<br><small>(Matemáticas)</small>
+<td class="disponible">Juan Rivera<br><small>(Historia)</small>
+<td class="ocupado">Luis López<br><small>(Diseño Web)</small>
+</tr>
+
+<tr>
+<td>12:00 - 13:00</td>
+<td class="disponible">Pedro Castillo<br><small>(Educ. Física)</small>
+<td class="ocupado">Luna Vega<br><small>(Sistema Operativo)</small>
+<td class="disponible">Lucía Ríos<br><small>(Filosofía)</small>
+<td class="ocupado">Galo Pérez<br><small>(Emprendimiento)</small>
+<td class="disponible">Victoria Cruz<br><small>(Aplicaciones Ofimáticas)</small>
+</tr>
+
+</table>
+</section>
+
+</section>
+
+<section id="contacto">
+<div class="card">
+<h2>📞 Contacto</h2>
+<p>Unidad Educativa Provincia del Carchi</p>
+<p>Teléfono: 0999999999</p>
+<p>Correo: info@colegio.edu</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Unidad Educativa Provincia del Carchi</p>
+</footer>
+
+<script>
+function mostrar(id){
+document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
